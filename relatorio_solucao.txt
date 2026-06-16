@@ -1,0 +1,80 @@
+
+================================================================================
+RELATÓRIO DE SOLUÇÃO - PROBLEMA DE PROGRAMAÇÃO LINEAR
+ENADE 2021 - Desafio Sistemas de Informação
+================================================================================
+
+MODELO MATEMÁTICO
+--------------------------------------------------------------------------------
+
+Variáveis de Decisão:
+  x₁ = dias de operação da Fábrica de Manaus
+  x₂ = dias de operação da Fábrica da Região Sul
+
+Função Objetivo (Minimização de Custos):
+  Min Z = 150.000·x₁ + 210.000·x₂
+
+Restrições de Produção:
+  8.000·x₁ + 2.000·x₂ ≥ 16.000  (Desktops)
+  1.000·x₁ + 1.000·x₂ ≥  6.000  (Notebooks)
+  2.000·x₁ + 7.000·x₂ ≥ 28.000  (Netbooks)
+
+Restrições de Não-Negatividade:
+  x₁, x₂ ≥ 0
+
+SOLUÇÃO ÓTIMA
+--------------------------------------------------------------------------------
+
+Variáveis Ótimas:
+  x₁ = 2.800000 dias (Fábrica Manaus)
+  x₂ = 3.200000 dias (Fábrica Região Sul)
+
+Custo Total Mínimo:
+  Z = R$ 1,092,000.00
+
+ANÁLISE DE CUSTOS
+--------------------------------------------------------------------------------
+
+Custo Manaus: 150.000 × 2.800000 = R$      420,000.00
+Custo Sul:    210.000 × 3.200000 = R$      672,000.00
+──────────────────────────────────────────────────
+CUSTO TOTAL:                    R$    1,092,000.00
+
+VERIFICAÇÃO DE RESTRIÇÕES
+--------------------------------------------------------------------------------
+
+Produção Realizada vs. Demanda:
+
+
+Desktops:
+  Manaus:         22
+  Sul:             6
+  Total:          29 /         16  ✓
+
+Notebooks:
+  Manaus:          3
+  Sul:             3
+  Total:           6 /          6  ✓
+
+Netbooks:
+  Manaus:          6
+  Sul:            22
+  Total:          28 /         28  ✓
+
+CONCLUSÃO
+--------------------------------------------------------------------------------
+
+A solução ótima encontrada minimiza os custos operacionais mantendo todas as
+restrições de produção satisfeitas. A empresa deve:
+
+1. Operar a Fábrica de Manaus por 2.8000 dias
+2. Operar a Fábrica da Região Sul por 3.2000 dias
+3. Incorrendo em um custo total mínimo de R$ 1,092,000.00
+
+Esta alocação garante a entrega de:
+  • 29 desktops (demanda: 16.000)
+  • 6 notebooks (demanda: 6.000)
+  • 28 netbooks (demanda: 28.000)
+
+Desenvolvido com fins acadêmicos - ENADE 2021
+================================================================================
